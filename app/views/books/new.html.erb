@@ -1,5 +1,5 @@
 <h1>New Book</h1>
-<%= form_with scope: :article, local: true do |form| %>
+<%= form_with scope: :book, url: books_path, local: true do |form| %>
   <p>
     <%= form.label :title %><br>
     <%= form.text_field :title %>
@@ -15,14 +15,14 @@
     <%= form.text_area :description %>
   </p>
 
-  <p>
-    <%= form.label :URL %><br>
-    <%= form.URL :URL %>
-  </p>
+<!-- How to make upcase? v <a> -->
+  <p><a>
+    <%= form.label :Url %><br>
+    <%= form.text_field :Url %>
+  </a></p>
 
   <p>
     <%= form.submit %>
   </p>
 <% end %>
-
-#title, author, description, and URL
+<%= link_to 'Back', books_path %>
