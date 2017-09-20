@@ -9,7 +9,5 @@
   <%= link_to @book.text %>
 </p>
 
-<%= link_to 'Back', books_path %>
-<!-- link to ^ -->
-
-<!-- @book.link -->
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', book_path %>
