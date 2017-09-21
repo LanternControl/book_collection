@@ -5,8 +5,18 @@
 </p>
 
 <p>
+  <strong>Author:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @book.description %>
+</p>
+
+<p>
   <strong>Hyperlink:</strong>
-  <%= link_to @book.text %>
+  <%= @book.URL %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |

@@ -2,8 +2,12 @@
 
 one:
   title: MyString
-  text: MyText
+  author: MyString
+  description: MyText
+  URL: 
 
 two:
   title: MyString
-  text: MyText
+  author: MyString
+  description: MyText
+  URL: 
